@@ -1,0 +1,115 @@
+.about {
+  margin-bottom: 22rem;
+
+  .container {
+    position: relative;
+  }
+
+  &__circle-text {
+    position: absolute;
+    right: 0;
+    top: -5.7rem;
+    width: 20.5rem;
+    height: 22.8rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    width: 79rem;
+    margin-bottom: 10rem;
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 7rem;
+    text-transform: uppercase;
+
+    .orange {
+      color: #FF522A;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 45.6rem;
+    height: 44rem;
+
+    > div {
+      width: 21%;
+      height: 85%;
+      background: black;
+
+      &:nth-child(odd) {
+        align-self: flex-end;
+      }
+    }
+
+    > img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      mix-blend-mode: screen;
+    }
+  }
+
+  &__text-box {
+    width: 91.6rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+
+    > * {
+      margin-bottom: 2.4rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .about {
+    margin-bottom: 20rem;
+
+    &__circle-text {
+      display: none;
+    }
+
+    &__title {
+      width: 100%;
+      margin-bottom: 8rem;
+      font-size: 6.8rem;
+      line-height: 6.8rem;
+    }
+
+    &__content {
+      display: block;
+    }
+
+    &__img-block {
+      width: 100%;
+      height: 72.2rem;
+      margin-bottom: 8rem;
+    }
+
+    &__text-box {
+      width: 100%;
+      font-size: 3rem;
+      line-height: 4.2rem;
+
+      > * {
+        margin-bottom: 4.4rem;
+      }
+    }
+  }
+}
