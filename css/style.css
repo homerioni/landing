@@ -143,13 +143,47 @@ input[type=number] {
 .about {
   margin-bottom: 22rem;
 }
-.about .container {
-  position: relative;
+.about__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 7rem;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  border-top: 2px solid #E6E6E6;
+  border-bottom: 2px solid #E6E6E6;
+  font-weight: 600;
+  font-size: 3rem;
+  overflow: auto;
+}
+.about__header > li {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.about__header > li:hover {
+  color: #FF522A;
+}
+.about__title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 10rem;
 }
 .about__circle-text {
-  position: absolute;
-  right: 0;
-  top: -5.7rem;
   width: 20.5rem;
   height: 22.8rem;
 }
@@ -161,7 +195,6 @@ input[type=number] {
 }
 .about__title {
   width: 79rem;
-  margin-bottom: 10rem;
   font-weight: 600;
   font-size: 7rem;
   line-height: 7rem;
@@ -221,6 +254,11 @@ input[type=number] {
 @media (max-width: 48em) {
   .about {
     margin-bottom: 20rem;
+  }
+  .about__header {
+    padding: 4rem 0;
+    margin-bottom: 12rem;
+    font-size: 5rem;
   }
   .about__circle-text {
     display: none;

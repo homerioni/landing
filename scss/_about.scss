@@ -1,14 +1,37 @@
 .about {
   margin-bottom: 22rem;
 
-  .container {
-    position: relative;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7rem;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border-top: 2px solid #E6E6E6;
+    border-bottom: 2px solid #E6E6E6;
+    font-weight: 600;
+    font-size: 3rem;
+    overflow: auto;
+
+    > li {
+      flex: none;
+
+      &:hover {
+        color: #FF522A;
+      }
+    }
+  }
+
+  &__title-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 10rem;
   }
 
   &__circle-text {
-    position: absolute;
-    right: 0;
-    top: -5.7rem;
     width: 20.5rem;
     height: 22.8rem;
 
@@ -21,7 +44,6 @@
 
   &__title {
     width: 79rem;
-    margin-bottom: 10rem;
     font-weight: 600;
     font-size: 7rem;
     line-height: 7rem;
@@ -80,6 +102,12 @@
 @media (max-width: 48em) {
   .about {
     margin-bottom: 20rem;
+
+    &__header {
+      padding: 4rem 0;
+      margin-bottom: 12rem;
+      font-size: 5rem;
+    }
 
     &__circle-text {
       display: none;
